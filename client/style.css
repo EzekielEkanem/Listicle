@@ -1,0 +1,337 @@
+:root {
+  background-color: white;
+  font-family: Avenir, Helvetica, sans-serif;
+  color: black;
+  display: block;
+}
+
+body {
+  display: block;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: 0;
+}
+
+#banner {
+  display: flex;
+  background-image: url('https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1470951917131-VO6KK2XIFP4LPLCYW7YU/McQueen15.jpg?format=1500w');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  border-bottom: 2px solid black;
+  justify-content: flex-end;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+}
+
+.nav-container {
+  background-color: #01112680;
+  width: 50%;
+  height: 50vh;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: white;
+  font-weight: 900;
+  font-size: 3em;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px black;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  font-weight: 700;
+  font-size: 2rem;
+  display: block;
+}
+
+nav p {
+  font-style: italic;
+  color: #fff;
+  margin-top: 0;
+  text-align: center;
+  display: block;
+}
+
+nav button {
+  height: 70px;
+  width: 220px;
+  font-size: 22px;
+  line-height: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(203, 23, 23, 0.62);
+  border: 2px solid transparent;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 900;
+  color: #000;
+  transition: .3s;
+}
+
+nav button:hover {
+  background-color: rgba(241, 12, 12, 0.859);
+  color: #fff;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+body main {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+article {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 350px;
+  height: 350px;
+  cursor: pointer;
+  box-shadow: 0 0 5px #000;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0;
+  display: block;
+}
+
+.car-card-overlay {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3,1fr);
+  background: rgba(0,0,0,.8);
+  color: #fff;
+  opacity: 0;
+  transition: all .5s;
+}
+
+.car-card-overlay:hover {
+  opacity: 1;
+}
+
+.car-card-name {
+  font-size: 30px;
+  line-height: 40px;
+  transform: translateY(40px);
+  transition: all .7s;
+}
+
+.car-brief {
+  padding-top: 10px;
+  padding-left: 30px;
+  letter-spacing: 3px;
+}
+
+article h3 {
+  color: rgba(241, 12, 12, 0.859);
+  margin-bottom: 0;
+  padding-left: 10px;
+  font-size: .8em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+hr {
+  display: block;
+  width: 200px;
+  border: none;
+  border-bottom: solid 2px white;
+  position: absolute;
+  left: 40px;
+  padding-top: 10px;
+  transition: all .5s;
+}
+
+.car-card-price {
+  padding-top: 50px;
+  padding-left: 0;
+  font-size: 18px;
+  line-height: 10px;
+  font-weight: 700;
+  opacity: 1;
+  transform: translateY(40px);
+  transition: all .7s; 
+}
+
+article p {
+  font-size: .7em;
+  font-style: italic;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.car-card-link {
+  padding-top: 20px;
+  padding-left: 0;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all .7s;
+}
+
+[role=button] {
+  height: max-content;
+  font-size: 16px;
+  width: max-content;
+  background-color: rgba(241, 12, 12, 0.859);
+  border: 2px solid transparent;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 900;
+  color: #000;
+  transition: .3s;
+  display: inline-block;
+  text-decoration: none;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+
+.car-info {
+  margin-bottom: 80px;
+  background-color: rgba(241, 12, 12, 0.859);
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 50px;
+  width: 60%;
+}
+
+.car-details {
+  width: 100%;
+  padding: 20px 30px 40px;
+}
+
+.car-details h2 {
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px black;
+  margin-bottom: 20px;
+}
+
+.car-details p {
+  color: #000;
+  margin-bottom: 10px;
+}
+
+strong {
+  font-weight: bolder;
+}
+
+#car-image {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  object-position: center center;
+  border: 3px solid black;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+img {
+  max-width: 100%;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+/* a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
